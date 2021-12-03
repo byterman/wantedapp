@@ -1,0 +1,33 @@
+.all{
+    background-color: #6ECEFF;
+}
+.mostwanted{
+    
+    background-color: cadetblue;
+    width: 100vw;
+    height: 30vh; 
+    border-radius: 5%;
+}
+
+.carrusel{
+    background-color: blue;
+    padding: 5px;
+    height: 20vh; 
+}
+.slide{
+   
+    flex-direction: row;
+}
+img{
+    width: 20vw;
+    height: 10vh;
+
+}
+.buscador{
+    width: 100vw;
+    height: 70vh;
+}
+h1{
+    text-align: center;
+    color: white;
+}

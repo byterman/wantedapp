@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form  #form="ngForm" (ngSubmit)="register(form)">
+    <ion-grid>
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center >
+          <div text-center>
+            <h3>¡Añadete a los más buscados!</h3>
+          </div>
+          <div padding>
+            <div  class="positionGeneral">
+              <div class="divimg">
+                <ion-item>
+                  <div class="labelFile"></div>
+                  <ion-input type="file" class="inputFile" accept="image/*" (change)="changeListener($event)"></ion-input>
+                </ion-item>
+              </div>
+              <div class="divinfo">
+                <ion-item>
+                  <ion-input  name="name" type="text" placeholder="Name" ngModel required></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-input name="alias" type="text" placeholder="Alias" ngModel required></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-input name="edad" type="number" placeholder="Edad" ngModel required></ion-input>
+                </ion-item>
+              </div>
+             
+
+            </div>
+           
+            <ion-item>
+              <ion-label>Raza</ion-label>
+              <ion-select value="unknown">
+                <ion-select-option value="white">Blanco</ion-select-option>
+                <ion-select-option value="black">Negro</ion-select-option>
+                <ion-select-option value="chinchonchan">Asian</ion-select-option>
+                <ion-select-option value="unknown">Desconocida</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-label>Sexo</ion-label>
+              <ion-select value="indeterminado">
+                <ion-select-option value="Hombre">Hombre</ion-select-option>
+                <ion-select-option value="Mujer">Mujer</ion-select-option>
+                <ion-select-option value="indeterminado">Indeterminado</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-input name="pelo" type="text" placeholder="Pelo" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="descripcion" type="text" placeholder="El sujeto ha comentido el crimen de guera... " ngModel required></ion-input>
+            </ion-item>
+         
+          </div>
+          <div padding>
+            <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="block">Register</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+  
+
+</ion-content>

@@ -1,0 +1,35 @@
+.positionGeneral{
+    display: flex;
+
+}
+h3{
+    text-align: center;
+}
+.labelFile{
+    background-image: url(https://www.computerhope.com/jargon/g/guest-user.jpg);
+
+    width: 50vw;
+    height: 30vh;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40vw 25vh;
+    /*background-size: cover;*/
+    position: relative;
+}
+
+.inputFile{
+    z-index: 3;
+    position: absolute;
+    opacity:0;
+}
+
+.divimg{
+    width: 50vw;
+    height:30vh;
+}
+
+.divinfo{
+    width: 50vw;
+    height: 30vh;
+}
